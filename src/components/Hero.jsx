@@ -11,7 +11,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900"
       >
-        Hi, I’m Yanay — I build real web apps
+        Hi, I’m Yanay! I build real web apps
       </motion.h1>
 
       {/* SUBTITLE */}
