@@ -5,7 +5,7 @@ export default function Navbar() {
         
         {/* LOGO */}
         <h1 className="font-bold text-black text-lg tracking-tight hover:opacity-70 transition">
-          Yanay.dev
+          Yanay Garcia
         </h1>
 
         {/* LINKS */}
