@@ -4,10 +4,12 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollProgress from "./components/ScrollProgress";
 
 function App() {
   return (
     <div className="bg-gradient-to-br from-white to-gray-100 min-h-screen text-gray-900">
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <Projects />

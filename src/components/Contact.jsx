@@ -10,7 +10,6 @@ export default function Contact() {
   const [error, setError] = useState(false);
 
   const sendEmail = (e) => {
-    console.log(import.meta.env);
     e.preventDefault();
 
     setLoading(true);

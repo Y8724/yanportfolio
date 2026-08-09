@@ -3,11 +3,15 @@ import { motion } from "framer-motion";
 const skillGroups = [
   {
     title: "Frontend",
-    skills: ["React", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
+    skills: ["React", "JavaScript", "Tailwind CSS", "Framer Motion", "HTML", "CSS"],
   },
   {
     title: "Backend",
-    skills: ["Python", "FastAPI", "REST APIs"],
+    skills: ["Node.js", "Express", "Python", "FastAPI", "REST APIs", "JWT Auth"],
+  },
+  {
+    title: "AI & Databases",
+    skills: ["OpenAI API", "Prompt Engineering", "PostgreSQL", "Prisma", "SQLAlchemy"],
   },
   {
     title: "Tools & Others",
@@ -24,13 +28,14 @@ export default function Skills() {
           Skills
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {skillGroups.map((group, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300"
             >
@@ -42,7 +47,7 @@ export default function Skills() {
                 {group.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="text-sm bg-white border px-3 py-1 rounded-full hover:bg-black hover:text-white transition"
+                    className="text-sm bg-white border px-3 py-1 rounded-full hover:bg-black hover:text-white hover:scale-105 transition-all cursor-default"
                   >
                     {skill}
                   </span>
